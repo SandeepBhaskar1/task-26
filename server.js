@@ -27,6 +27,7 @@ const server = http.createServer((req, res) => {
         fs.readFile(imagePath, (err, data) => {
             if (err) {
                 res.statusCode = 500;
+                res.setHeader("Content-Type", "text/plain");
                 res.end("Error loading image");
             } else {
                 res.statusCode = 200;
