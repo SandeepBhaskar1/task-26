@@ -5,7 +5,7 @@ const path = require('path');
 const PORT = process.env.PORT || 1163;
 const hostname = process.env.HOSTNAME || 'localhost';
 
-const home = fs.readFileSync("home.html", "utf-8");
+const home = fs.readFileSync("index.html", "utf-8");
 const about = fs.readFileSync("about.html", "utf-8");
 const contact = fs.readFileSync("contact.html", "utf-8");
 
